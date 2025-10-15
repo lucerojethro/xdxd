@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
-
   <nav>
     <div class="nav-left">
       <img src="profile.jpg" alt="James Jethro Lucero">
@@ -18,6 +17,7 @@
       <a href="#about">About Me</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
+      <button id="theme-toggle">🌙</button>
     </div>
   </nav>
 
@@ -34,7 +34,13 @@
 
   <section id="projects">
     <h2>Projects</h2>
-    <div class="projects">
+
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>🎨 Color Changer</h3>
+        <p>A simple web app that changes the background color of a box when you click a button. Built using HTML, CSS, and JavaScript.</p>
+        <a href="colorchanger.html" class="project-link" target="_blank">Try the Color Changer →</a>
+      </div>
     </div>
   </section>
 
@@ -42,7 +48,10 @@
     <h2>Contact</h2>
     <p>Email: <a href="mailto:lucerojethro123@gmail.com">lucerojethro123@gmail.com</a></p>
     <p>Phone: 09953243486</p>
+    <p><a href="https://github.com/lucerojethro" target="_blank" class="github-link">Visit my GitHub 🔗</a></p>
   </section>
 
+
+  <script src="theme.js"></script>
 </body>
 </html>

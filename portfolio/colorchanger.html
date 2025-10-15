@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Changer | James Jethro Lucero</title>
+  <link rel="stylesheet" href="colorchanger.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav>
+    <h1>🎨 Color Changer</h1>
+    <a href="portfolio.html">← Back to Portfolio</a>
+  </nav>
+
+  <div class="container">
+    <h2>Click the button to change the box color!</h2>
+
+    <div class="color-box" id="colorBox"></div>
+
+    <button id="changeColor">Change Color</button>
+  </div>
+
+  <script>
+    const box = document.getElementById('colorBox');
+    const button = document.getElementById('changeColor');
+
+    const colors = ['#ff6b6b', '#ffd93d', '#6bcfff', '#8dff6b', '#b76bff', '#ff8fb1'];
+
+    button.addEventListener('click', () => {
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+      box.style.backgroundColor = randomColor;
+    });
+  </script>
+</body>
+</html>
